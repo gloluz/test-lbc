@@ -9,7 +9,7 @@ interface ButtonProps {
 }
 
 const Button = styled.button<ButtonProps>`
-  padding: 6px 12px;
+  padding: 5px 10px;
   border: none;
   border-radius: 5px;
   font-size: 16px;

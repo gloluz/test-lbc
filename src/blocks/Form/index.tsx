@@ -12,7 +12,7 @@ import { ReactComponent as SendIcon } from '../../assets/svg/send.svg';
 import { ReactComponent as WorldIcon } from '../../assets/svg/world.svg';
 import messageApi from '../../services/messageApi';
 
-import { StyledForm } from './styles';
+import { StyledForm, ButtonContainer } from './styles';
 
 type Setter<T extends unknown> = (param: T) => void;
 
@@ -60,9 +60,11 @@ const Form = ({ setMessages, setError }: PropsWithChildren<FormProps>) => {
         </Tooltip>
       </InputGroup>
 
-      <Button type="submit" variant="secondary" aria-label="Envoyer">
-        <SendIcon />
-      </Button>
+      <ButtonContainer>
+        <Button type="submit" variant="secondary" aria-label="Envoyer">
+          <SendIcon />
+        </Button>
+      </ButtonContainer>
     </StyledForm>
   );
 };
